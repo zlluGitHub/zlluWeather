@@ -1,0 +1,114 @@
+<view class="container" style="background: url('../../static/images/bgc1.jpg') center center no-repeat; background-size: cover;">
+  <view class="inner">
+    <view class="inner-top">
+      <view class="top-right">
+          <image  src="../../static/images/position.png" class="position-icon"/>
+          <text class="city">{{weatherData.currentCity}}</text>
+
+      </view>
+      <icon type="search" class="search" color="#fff" size="20"/>
+    </view>
+    <view class="temperature">
+      <view class="tem-left">
+        <text class="tem-num">{{realTime}}</text>
+        <view class="left-text">
+          <text class="text-left">更新:{{update}}</text>
+          <text>pm25:{{weatherData.pm25}}</text>
+
+        </view>
+      </view> 
+      <image class="weather-icon" src="../../static/images/sunny.png"/>
+      <view>
+          <text class="text1">今天 {{date}}</text>
+          <text class="text2">{{weatherData.weatherDesc}} {{weatherData.wind}}</text>
+          <text class="text3">今日气温：{{weatherData.temperature}}</text>
+      </view>
+    </view>
+    <view class="warp">
+      温馨提示：今日事宜对方VS垫付部分都是白色的答复v贝多芬v必定是方式VS地方vas，但据爱为v福啊喂asv劲啊阿
+    </view>
+     <scroll-view scroll-x style="width: 100%;  margin-top: 28rpx;">
+        <view  class="details-box">
+          <view class="details">
+            <text class="text-block">今天</text>
+            <text class="text-block">20-3</text>
+            <text class="text-block">晴</text>
+            <text class="text-block">西北风3~4级</text>
+          </view>
+          <view class="details">
+            <text class="text-block">今天</text>
+            <text class="text-block">20-3</text>
+            <text class="text-block">晴</text>
+            <text class="text-block">西北风3~4级</text>
+          </view>
+          <view class="details">
+            <text class="text-block">今天</text>
+            <text class="text-block">20-3</text>
+            <text class="text-block">晴</text>
+            <text class="text-block">西北风3~4级</text>
+          </view>
+          <view class="details">
+            <text class="text-block">今天</text>
+            <text class="text-block">20-3</text>
+            <text class="text-block">晴</text>
+            <text class="text-block">西北风3~4级</text>
+          </view>
+          <view class="details">
+            <text class="text-block">今天</text>
+            <text class="text-block">20-3</text>
+            <text class="text-block">晴</text>
+            <text class="text-block">西北风3~4级</text>
+          </view>
+          <view class="details">
+            <text class="text-block">今天</text>
+            <text class="text-block">20-3</text>
+            <text class="text-block">晴</text>
+            <text class="text-block">西北风3~4级</text>
+          </view>
+          <view class="details">
+            <text class="text-block">今天</text>
+            <text class="text-block">20-3</text>
+            <text class="text-block">晴</text>
+            <text class="text-block">西北风3~4级</text>
+          </view>
+      </view>  
+    </scroll-view>
+  </view>
+  <view class="list-warp">
+     <view class="list-title">空气质量</view>
+     <view class="list-content">空气dfaer阿瑟俄方vearvear各色人身高不是人工方式三个示范岗示范岗示范岗示范岗是你是质量</view>
+  </view>
+  <view class="list-warp">
+     <view class="list-title">空气质量</view>
+     <view class="list-content">空气dfaer阿瑟俄方vearvear各色人身高不是人工方式三个示范岗示范岗示范岗示范岗是你是质量</view>
+  </view>
+  <view class="list-warp">
+     <view class="list-title">空气质量</view>
+     <view class="list-content">空气dfaer阿瑟俄方vearvear各色人身高不是人工方式三个示范岗示范岗示范岗示范岗是你是质量</view>
+  </view>
+  <view class="list-warp">
+     <view class="list-title">空气质量</view>
+     <view class="list-content">空气dfaer阿瑟俄方vearvear各色人身高不是人工方式三个示范岗示范岗示范岗示范岗是你是质量</view>
+  </view>
+  <view class="list-warp">
+     <view class="list-title">空气质量</view>
+     <view class="list-content">空气dfaer阿瑟俄方vearvear各色人身高不是人工方式三个示范岗示范岗示范岗示范岗是你是质量</view>
+  </view>
+ <text>zfbfxdb{{weatherData}}</text> 
+</view>
+
+<!-- 
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <map name=""></map>
+  <open-date ></open-date>
+</view> -->
