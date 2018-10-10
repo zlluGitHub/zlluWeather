@@ -1,12 +1,13 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "transparent",
-    "navigationBarTitleText": "冰蓝＆心-天气预报",
-    "navigationBarTextStyle":"black"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/search/search"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "transparent",
+        "navigationBarTitleText": "冰蓝＆心-天气预报",
+        "navigationBarTextStyle": "black"
+    }
+
 }
