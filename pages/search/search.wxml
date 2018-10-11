@@ -1,6 +1,5 @@
 <view class="search-box">
-    <input placeholder="中文/拼音/首字母" class='search-input' bindinput='bindSarchInput' placeholder-class='search-input-placeholder' value="{{inputVal}}" />
-    <icon type="search" class="search" color="purple" bindtap='search' size="20"/>
+    <input placeholder="请输入中文/拼音/首字母" class='search-input' bindinput='bindSarchInput' placeholder-class='search-input-placeholder' value="{{inputVal}}" />
 </view>
 <view class='a-z'>
     <view wx:for="{{cityAZ}}" wx:key="unique">
@@ -15,6 +14,5 @@
         <view wx:else class='city-item-A-Z' data-cityname='{{item.cityName}}'>
             {{item.cityName}}
         </view>
-        <!-- <view data-cityname='{{item.cityName}}' bindtap='citySelected' >{{item.cityName}}</view> -->
     </view>
 </view>

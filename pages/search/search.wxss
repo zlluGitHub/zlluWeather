@@ -63,9 +63,3 @@
 .search-input-placeholder {
     text-align: center;
 }
-
-.search {
-    position: absolute;
-    top: 30%;
-    right: 10%;
-}

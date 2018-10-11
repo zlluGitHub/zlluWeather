@@ -27,7 +27,7 @@ Page({
     onLoad: function() {
         innerAudioContext.autoplay = this.data.musics;
         innerAudioContext.src =
-            "http://pgezraano.bkt.clouddn.com/%E7%BA%AF%E9%9F%B3%E4%B9%90%20-%20%E4%B8%AD%E5%A4%AE%E6%B0%94%E8%B1%A1%E5%8F%B0%E5%A4%A9%E6%B0%94%E9%A2%84%E6%8A%A5.mp3";
+            "http://pgezraano.bkt.clouddn.com/SoBeautiful.mp3";
     },
     playMusic: function() {
         if (this.data.musics) {

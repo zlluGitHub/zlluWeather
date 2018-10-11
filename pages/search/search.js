@@ -12,6 +12,8 @@ Page({
         });
     },
     clickAddress: function(e) {
+        console.log(e);
+
         const that = this;
         this.setData({
             address: e.currentTarget.dataset.cityname
@@ -101,7 +103,6 @@ Page({
             });
             return;
         }
-
         for (var i = 0; i < citys.length; i++) {
             if (
                 citys[i].cityName.indexOf(this.data.inputVal) == 0 ||
