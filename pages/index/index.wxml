@@ -1,7 +1,7 @@
-<view class="container" style="background: url('../../static/images/bgc1.jpg') center center no-repeat; background-size: cover;">
+<view class="container" style="background: url('http://pgezsfbmq.bkt.clouddn.com/bgc1.jpg') center center no-repeat; background-size: cover;">
   <view class="inner">
     <view class="inner-top">
-      <view class="top-right">
+      <view class="top-right" bindtap='search'>
           <image  src="../../static/images/position.png" class="position-icon"/>
           <text class="city">{{weatherData.currentCity}}</text>
 
@@ -16,6 +16,7 @@
           <text>pm25:{{weatherData.pm25}}</text>
         </view>
       </view> 
+     
       <image class="weather-icon" src="{{weather_data[0].dayPictureUrl}}"/>
       <view>
           <text class="text1">今天 {{date}}</text>
@@ -23,6 +24,10 @@
           <text class="text3">{{weatherData.wind}}</text>
       </view>
     </view>
+     <view class="other">
+        <text class="greeting"> 问候，是一种甜蜜的挂念，愿我们挂念常在，温馨常在。 </text>
+        <image class="horn" bindtap='playMusic' src="../../static/images/{{horn}}" />
+      </view>
     <view class="warp">
       <swiper indicator-dots="{{indicatorDots}}"
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -48,4 +53,5 @@
      <view class="list-title">{{item.tipt}}:{{item.zs}}</view>
      <view class="list-content">{{item.des}}</view>
   </view>
+  <view class="footer"> 制作者：冰蓝&心</view>
 </view>

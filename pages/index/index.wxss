@@ -79,6 +79,20 @@
     width: 100%;
 }
 
+.other {
+    font-size: 28rpx;
+    margin: 30rpx;
+    position: relative;
+}
+
+.horn {
+    position: absolute;
+    top: -70rpx;
+    right: 28rpx;
+    width: 60rpx;
+    height: 60rpx;
+}
+
 .text1,
 .text2,
 .text3 {
@@ -137,4 +151,11 @@
 .weather-icon-other {
     width: 40rpx;
     height: 40rpx;
+}
+
+.footer {
+    padding: 20rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #fff;
 }

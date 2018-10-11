@@ -21,14 +21,11 @@ Page({
         this.data.address
       }&output=json&ak=${AK}`, //仅为示例，并非真实的接口地址
             success(res) {
-                console.log('res.data.result.location');
                 app.changeLocation(res.data.result.location);
                 wx.navigateBack({
                     delta: 1,
                     url: "../../pages/index/index",
                     success: function(e) {
-                        console.log('zsdv');
-
                         var page = getCurrentPages().pop();
                         if (page == undefined || page == null) return;
                         page.onLoad();
@@ -88,7 +85,6 @@ Page({
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
-    onReady: function() {},
     bindSarchInput: function(e) {
         wx.pageScrollTo({
             scrollTop: 0,
@@ -132,45 +128,6 @@ Page({
             cityResults: cityResultsTemp
         });
     },
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function() {
-        console.log('asd');
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function() {},
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function() {},
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    // onPullDownRefresh: function() {
-    //   setTimeout(function() {
-    //     wx.stopPullDownRefresh();
-    //   }, 1000);
-    // },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function() {},
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function() {},
-    /**
-     * 页面的初始数据
-     */
     data: {
         scrollAZ: null,
         scrollNow: 0,
