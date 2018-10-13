@@ -19,9 +19,7 @@ Page({
             address: e.currentTarget.dataset.cityname
         });
         wx.request({
-            url: `https://api.map.baidu.com/geocoder/v2/?address=${
-        this.data.address
-      }&output=json&ak=${AK}`, //仅为示例，并非真实的接口地址
+            url: `https://api.map.baidu.com/geocoder/v2/?address=${this.data.address}&output=json&ak=${AK}`, //仅为示例，并非真实的接口地址
             success(res) {
                 app.changeLocation(res.data.result.location);
                 wx.navigateBack({

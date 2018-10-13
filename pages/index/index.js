@@ -12,22 +12,31 @@ Page({
         index: [],
         weather_data: [],
         settings: null,
-        imgUrls: [
-            'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-            'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-            'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-        ],
         autoplay: true, //轮播自动播放
         interval: 3500, //暂停时间
         duration: 1000, //移动速度
-        indicatorDots: true,
+        circular: true, //衔接滑动
+        vertical: true,
+        imgUrls: [
+            'http://pgezsfbmq.bkt.clouddn.com/psb.jpg',
+            'http://pgezsfbmq.bkt.clouddn.com/ty.jpg',
+            'http://pgezsfbmq.bkt.clouddn.com/er.jpg',
+            'http://pgezsfbmq.bkt.clouddn.com/12-2.jpg',
+            'http://pgezsfbmq.bkt.clouddn.com/rt.jpg',
+            'http://pgezsfbmq.bkt.clouddn.com/u=1235775941,4073853748&fm=26&gp=0.jpg',
+            'http://pgezsfbmq.bkt.clouddn.com/u=3783951963,3204361524&fm=26&gp=0.jpg',
+            'http://pgezsfbmq.bkt.clouddn.com/u=998585692,4236657467&fm=26&gp=0.jpg'
+        ],
+        greeting: [
+            '问候，是一种甜蜜的挂念，愿我们温馨常在。',
+            '那一世，我不为修来世，只为途中与你相遇。',
+            '喜欢一个人总是藏不住，总会从眼睛里跑出来。',
+            '我说着不放弃，却越来越没勇气继续爱你。',
+            '没有彩虹的阳光，孤独时也要坚强。',
+        ],
+
         musics: true,
         horn: 'labakai.png'
-    },
-    onLoad: function() {
-        innerAudioContext.autoplay = this.data.musics;
-        innerAudioContext.src =
-            "http://pgezraano.bkt.clouddn.com/SoBeautiful.mp3";
     },
     playMusic: function() {
         if (this.data.musics) {
@@ -64,6 +73,10 @@ Page({
                     index: otherWeather.results[0].index,
                     weather_data: otherWeather.results[0].weather_data
                 });
+                innerAudioContext.autoplay = this.data.musics;
+                innerAudioContext.src =
+                    "http://pgezraano.bkt.clouddn.com/SoBeautiful.mp3";
+
             }
             // 发起weather请求 
         BMap.weather({
