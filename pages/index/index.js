@@ -19,12 +19,12 @@ Page({
         vertical: true,
         imgUrls: [
             'http://pgezsfbmq.bkt.clouddn.com/psb.jpg',
-            'http://pgezsfbmq.bkt.clouddn.com/ty.jpg',
-            'http://pgezsfbmq.bkt.clouddn.com/er.jpg',
-            'http://pgezsfbmq.bkt.clouddn.com/12-2.jpg',
+            // 'http://pgezsfbmq.bkt.clouddn.com/ty.jpg',
+            // 'http://pgezsfbmq.bkt.clouddn.com/er.jpg',
+            // 'http://pgezsfbmq.bkt.clouddn.com/12-2.jpg',
             'http://pgezsfbmq.bkt.clouddn.com/rt.jpg',
             'http://pgezsfbmq.bkt.clouddn.com/u=1235775941,4073853748&fm=26&gp=0.jpg',
-            'http://pgezsfbmq.bkt.clouddn.com/u=3783951963,3204361524&fm=26&gp=0.jpg',
+            // 'http://pgezsfbmq.bkt.clouddn.com/u=3783951963,3204361524&fm=26&gp=0.jpg',
             'http://pgezsfbmq.bkt.clouddn.com/u=998585692,4236657467&fm=26&gp=0.jpg'
         ],
         greeting: [
