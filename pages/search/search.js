@@ -8,12 +8,10 @@ Page({
     onLoad: function(options) {
         const that = this;
         that.setData({
-            cityResults: that.data.cityResults === null ? that.data.citys : ""
+            cityResults: that.data.cityResults === null ? that.data.citys : "北京"
         });
     },
     clickAddress: function(e) {
-        console.log(e);
-
         const that = this;
         this.setData({
             address: e.currentTarget.dataset.cityname
