@@ -3,7 +3,7 @@
     <image class="loadingimg" src="../../static/images/loading.gif" />
     <text class="loadingtext">主人，请稍等。。。</text>
   </view>
-  <view   wx:elif="{{weatherData!==''}}" class="{{weatherData!==''? 'active' :''}}" style="background: url('../../static/images/bgc1.jpg') center center no-repeat; background-size: cover;">
+  <view   wx:elif="{{weatherData!==''}}" class="{{weatherData!==''? 'active' :''}}" style="background: url('https://zhenglinglu.cn/external/images/bgc1.jpg') center center no-repeat; background-size: cover;">
     <view class="inner">
       <view class="inner-top">
         <view class="top-right" bindtap='search'>

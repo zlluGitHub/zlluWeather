@@ -1,3 +1,4 @@
+
 // 引用百度地图微信小程序JSAPI模块 
 var bmap = require('../../libs/bmap-wx.min.js');
 import { AK } from "../../static/index";
@@ -22,7 +23,7 @@ Page({
         duration: 1000, //移动速度
         circular: true, //衔接滑动
         vertical: true,
-        imgUrls: ["../../static/images/psb (1).jpg", "../../static/images/psb (2).jpg", "../../static/images/psb (3).jpg", "../../static/images/psb (4).jpg", "../../static/images/psb.jpg"],
+        imgUrls: ["https://zhenglinglu.cn/external/images/psb (1).jpg", "https://zhenglinglu.cn/external/images/psb (2).jpg", "https://zhenglinglu.cn/external/images/psb (3).jpg", "https://zhenglinglu.cn/external/images/psb (4).jpg", "https://zhenglinglu.cn/external/images/psb.jpg"],
         greeting: [
             '问候，是一种甜蜜的挂念，愿我们温馨常在。',
             '那一世，我不为修来世，只为途中与你相遇。',
@@ -80,7 +81,7 @@ Page({
             });
             innerAudioContext.autoplay = this.data.musics;
             innerAudioContext.src =
-                "https://zhenglinglu.cn/music/weather.mp3";
+                "https://zhenglinglu.cn/external/music/weather.mp3";
         }
         // 发起weather请求 
         BMap.weather({
