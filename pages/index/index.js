@@ -52,9 +52,7 @@ Page({
     onLoad: function () {
         this.getData();
     },
-    // onShow: function () {
-    //     this.getData();
-    // },
+   
     getData: function () {
         const that = this;
         // 新建百度地图对象 
